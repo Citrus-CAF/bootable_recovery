@@ -59,6 +59,7 @@ int gr_init_font(const char* name, GRFont** dest);
 void gr_text(const GRFont* font, int x, int y, const char *s, bool bold);
 int gr_measure(const GRFont* font, const char *s);
 void gr_font_size(const GRFont* font, int *x, int *y);
+void gr_set_font(__attribute__ ((unused))const char* name);
 
 void gr_blit(GRSurface* source, int sx, int sy, int w, int h, int dx, int dy);
 unsigned int gr_get_width(GRSurface* surface);
